@@ -1,4 +1,4 @@
-const MoonArray = [
+const moonArray = [
 `       _..._     
      .:::::::.    
     :::::::::::
@@ -73,6 +73,8 @@ const MoonArray = [
 `
 `
 ];
+
+//const moonArray = [`1`, `2`, `3`, `4`];
 
 totalMoons = moonArray.length;
 function RandomizeMoons(){
