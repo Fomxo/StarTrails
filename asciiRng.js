@@ -63,7 +63,7 @@ const MoonArray = [
     :::::::::::  
     `:::::::::'  
       `':::''
-]
+];
 
 totalMoons = moonArray.length;
 function RandomizeMoons(){
