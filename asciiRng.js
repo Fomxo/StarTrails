@@ -71,5 +71,5 @@ window.onload = RandomizeMoons()
 {
   let result = moonArray[Math.floor((Math.random() * totalMoons))]
   return result;
-document.getElementById("big-balls-idk").innerText = result;
+document.getElementById("moonImage").innerText = result;
 }
