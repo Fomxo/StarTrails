@@ -71,3 +71,5 @@ function RandomizeMoons(){
   document.getElementById("moonImage").innerText = result;
   return result;
 }
+
+window.onload = RandomizeMoons();
