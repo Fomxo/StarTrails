@@ -67,7 +67,8 @@ const MoonArray = [
 
 totalMoons = moonArray.length;
 
-window.onload = function RandomizeMoons(){
+window.onload = RandomizeMoons()
+function RandomizeMoons(){
   let result = moonArray[Math.floor((Math.random() * totalMoons))]
   document.getElementById("moonImage").innerText = result;
   return result;
