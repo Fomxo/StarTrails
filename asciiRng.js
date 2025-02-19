@@ -1,4 +1,4 @@
-MoonArray = [
+const MoonArray = [
       _..._     
      .:::::::.    
     :::::::::::
@@ -69,6 +69,7 @@ totalMoons = moonArray.length;
 
 window.onload = RandomizeMoons()
 {
-  moonArray[Math.floor((Math.random() * totalMoons))]
-  console.log(moonArray);
+  let result = moonArray[Math.floor((Math.random() * totalMoons))]
+  return result;
+document.getElementById("big-balls-idk").innerText = result;
 }
