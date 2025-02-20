@@ -13,12 +13,21 @@
       `-...-' 
 </pre>
 <a onclick="playAudio()">Listen in.</a>
+<pre id="bttn">
+       [⏵]
+</pre>
 
-<audio id="gn" src="audio/greenNoise.mp3" loop="loop"></audio>
+<audio id="gn" src="audio/greenNoise.mp3"></audio>
 <script type="text/javascript">
 function playAudio() {
        document.getElementById("gn").play();
+       document.getElementById("bttn").innerText = "[⏸]"
 }
+function pauseAudio(){
+       document.getElementById("gn").pause();
+       document.getElementById("bttn").innerText = "[⏵]"
+}
+       
 </script>
 </body>
 </html> 
