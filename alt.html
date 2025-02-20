@@ -12,20 +12,22 @@
     `.       .'  
       `-...-' 
 </pre>
-<a onclick="playAudio()">Listen in.</a>
-<pre id="bttn">
+<a>Listen in.</a>
+<pre id="bttn" onclick="playAudio()">
        [⏵]
+</pre>
+
+<pre id="bttn" onclick="pauseAudio()">
+       [⏸]
 </pre>
 
 <audio id="gn" src="audio/greenNoise.mp3"></audio>
 <script type="text/javascript">
 function playAudio() {
        document.getElementById("gn").play();
-       document.getElementById("bttn").innerText = "[⏸]"
 }
 function pauseAudio(){
        document.getElementById("gn").pause();
-       document.getElementById("bttn").innerText = "[⏵]"
 }
        
 </script>
