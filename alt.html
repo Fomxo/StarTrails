@@ -29,11 +29,17 @@
 <pre style="line-height:0.3">
        └──────┘
 </pre>
+<br>
+<br>
+<p id="ht1"></p>
+<p id="ht2"></p>
 
 <audio id="gn" src="audio/greenNoise.mp3"></audio>
 <script type="text/javascript">
 function playAudio() {
        document.getElementById("gn").play();
+       document.getElementById("ht1").innerText = "Can you hear that? They're showing signs.";
+       document.getElementById("ht2").innerText = "Listen closely.";
 }
 function pauseAudio(){
        document.getElementById("gn").pause();
