@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>...?</title>
+<link rel="stylesheet" href="https://unpkg.com/98.css" />
 </head>
 <body style="background-color:Black;font-family: 'Lucida Console', 'Courier New', monospace;color:white">
 
@@ -12,39 +13,20 @@
     `.       .'  
       `-...-' 
 </pre>
-<a>Listen in.</a>
-<pre style="line-height:0.3">
-       ┌──────┐
-</pre>
-<pre id="bttn" onclick="playAudio()" style="line-height:0.3">
-       │ [⏵] │
-</pre>
-<pre style="line-height:0.3">
-       │      │
-</pre>
 
-<pre id="bttn" onclick="pauseAudio()" style="line-height:0.3">
-       │ [⏸] │
-</pre>
-<pre style="line-height:0.3">
-       └──────┘
-</pre>
-<br>
-<br>
-<p id="ht1"></p>
-<p id="ht2"></p>
-
-<audio id="gn" src="audio/greenNoise.mp3"></audio>
-<script type="text/javascript">
-function playAudio() {
-       document.getElementById("gn").play();
-       document.getElementById("ht1").innerText = "Can you hear that? They're showing signs.";
-       document.getElementById("ht2").innerText = "Listen closely.";
-}
-function pauseAudio(){
-       document.getElementById("gn").pause();
-}
+<div class="window" style="width: 300px">
+  <div class="title-bar">
+    <div class="title-bar-text">A Window With Stuff In It</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <p>Test</p>
+  </div>
+</div>
        
-</script>
 </body>
 </html> 
