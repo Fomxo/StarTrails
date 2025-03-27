@@ -15,7 +15,78 @@
 
     <body class="center" style="padding: 50px">
 
-        <div class="tui-window">
+        <nav class="tui-nav absolute">
+            <span class="tui-datetime" data-format="h:m:s a"></span>
+            <ul>
+                <li class="tui-sidenav-button red-168-text">≡</li>
+                <span class="tui-statusbar-divider"></span>
+
+                <li class="tui-dropdown">
+                    <a href="/index.html"></a>
+                    <span class="red-168-text">H</span>ome
+                </li>
+
+                <li class="tui-dropdown">
+                    <span class="red-168-text">P</span>rojects
+                    <div class="tui-dropdown-content">
+                        <ul>
+                            <li>
+                                <a href="#!">
+                                    <span class="red-168-text">E</span>xample
+                                </a>
+                            </li>
+                            <div class="tui-black-divider"></div>
+
+                            <!-- SUBMENU EXAMPLE -->
+
+                            <li class="tui-dropdown block">
+                                <span class="right">►</span>
+                                <span class="red-168-text">S</span>tarmap
+                                <div class="tui-dropdown-content">
+                                    <ul>
+                                        <li>
+                                            <a href="/STARMAP/MAP">
+                                                <span class="red-168-text">M</span>ap
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                <span class="red-168-text">W</span>iki
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                <span class="red-168-text">M</span>ore...
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <div class="tui-black-divider"></div>
+                            <li>
+                                <a href="#!">
+                                    <span class="red-168-text">Q</span>uit
+                                    <span class="tui-shortcut">F10</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="tui-dropdown">
+                    <a href="#!"></a>
+                        <span class="red-168-text">A</span>bout
+                    </a>
+                </li>
+                <li class="tui-dropdown">
+                    <a href="#!">
+                        <span class="red-168-text">C</span>redits
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- <div class="tui-window">
             <fieldset class="tui-fieldset">
                 <legend>Starmap</legend>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
@@ -25,10 +96,9 @@
                 In quis bibendum libero. Donec nec egestas ipsum.<br>
                 Sed in venenatis diam. Nullam sollicitudin risus vel.<br>
             </fieldset>
-        </div>
+        </div> -->
 
-        <div class="info-text">Simple panel</div>
-        <div class="tui-panel cyan-168 black-255-text">
+        <div class="tui-panel cyan-168 black-255-text center">
             <div class="tui-panel-content">
                 <b>NOTE:</b> This page is still under construction.<br> 
                 The starmap is currently un available<br> 
