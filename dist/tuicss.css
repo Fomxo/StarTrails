@@ -1612,20 +1612,28 @@ input[type=button] {
   height: 768px;
 }
 
+.tui-screen-1400-1050 {
+  width: 1400px;
+  height:1050px;
+}
+
 .tui-screen-640-480,
 .tui-screen-800-600,
-.tui-screen-1024-768 {
+.tui-screen-1024-768,
+.tui-screen-1400-1050 {
   position: relative;
   overflow: hidden;
 }
 .tui-screen-640-480.bordered,
 .tui-screen-800-600.bordered,
-.tui-screen-1024-768.bordered {
+.tui-screen-1024-768.bordered,
+.tui-screen-1400-1050.bordered {
   border: 2px solid black;
 }
 .tui-screen-640-480.centered,
 .tui-screen-800-600.centered,
-.tui-screen-1024-768.centered {
+.tui-screen-1024-768.centered,
+.tui-screen-1400-1050.centered {
   margin: auto;
   margin-top: 20px;
 }
