@@ -1689,6 +1689,11 @@ input[type=button] {
   background-repeat: repeat;
 }
 
+.tui-bg-gray-black {
+  background-image: url("./images/bg-gray-black.png");
+  background-repeat: repeat;
+}
+
 .tui-bg-blue-black {
   background-image: url("./images/bg-blue-black.png");
   background-repeat: repeat;
