@@ -1,20 +1,198 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" class="no-tui-scroll tui-bg-blue-black">
+
 <head>
-<title>...?</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Main Hub</title>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
 </head>
-<body style="background-color:Black;font-family: 'Lucida Console', 'Courier New', monospace;color:white">
-<pre>
-       _..._     
-     .::'   `.    
-    :::       : 
-    :::       :  
-    `::.     .'  
-      `':..-'   
-</pre>
 
-<p>You're not suppose to be <a href="/testing" class="hide-link">here</a> yet</p>
-<!--looking for secrets are we? best to find things on your own. -->
+<body>
+    <div class="tui-screen-800-600 bordered centered tui-bg-blue-black">
 
+        <!-- Sidenav -->
+        <nav class="tui-sidenav absolute">
+            <ul>
+                <li>
+                    <a href="#!">
+                        <span class="red-168-text">O</span>pen
+                        <span class="tui-shortcut">ctrl+o</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">OS Shell</a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span class="red-168-text">C</span>opy
+                        <span class="tui-shortcut">ctrl+c</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span class="red-168-text">P</span>aste
+                        <span class="tui-shortcut">ctrl+v</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">C<span class="red-168-text">u</span>t
+                        <span class="tui-shortcut">ctrl+x</span>
+                    </a>
+                </li>
+                <div class="tui-black-divider"></div>
+                <li>
+                    <a href="#!">Insert</a>
+                </li>
+                <li>
+                    <a href="#!">Delete</a>
+                </li>
+                <li>
+                    <a href="#!">Go...</a>
+                </li>
+                <div class="tui-black-divider"></div>
+                <li>
+                    <a href="#!">
+                        <span class="red-168-text">S</span>earch
+                        <span class="tui-shortcut">ctrl+p</span>
+                    </a>
+                </li>
+                <div class="tui-black-divider"></div>
+                <li>
+                    <a href="#!">Exit <span class="tui-shortcut">F10</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Navbar -->
+        <nav class="tui-nav absolute">
+            <span class="tui-datetime" data-format="h:m:s a"></span>
+            <ul>
+                <li class="tui-sidenav-button red-168-text">≡</li>
+                <span class="tui-statusbar-divider"></span>
+
+                <li class="tui-dropdown">
+                    <a href="https://startrails.space/testing">
+                        <span class="red-168-text">H</span>ome
+                    </a>
+                </li>
+
+                <li class="tui-dropdown">
+                    <span class="red-168-text">P</span>rojects
+                    <div class="tui-dropdown-content">
+                        <ul>
+                            <li>
+                                <a href="#!">
+                                    <span class="red-168-text">E</span>xample
+                                </a>
+                            </li>
+                            <div class="tui-black-divider"></div>
+
+                            <!-- SUBMENU EXAMPLE -->
+
+                            <li class="tui-dropdown block">
+                                <span class="right">►</span>
+                                <span class="red-168-text">S</span>tarmap
+                                <div class="tui-dropdown-content">
+                                    <ul>
+                                        <li>
+                                            <a href="/STARMAP/MAP">
+                                                <span class="red-168-text">M</span>ap
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                <span class="red-168-text">W</span>iki
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                <span class="red-168-text">M</span>ore...
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <div class="tui-black-divider"></div>
+                            <li>
+                                <a href="#!">
+                                    <span class="red-168-text">Q</span>uit
+                                    <span class="tui-shortcut">F10</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="tui-dropdown">
+                    <a href="https://startrails.space/about">
+                        <span class="red-168-text">A</span>bout
+                    </a>
+                </li>
+                <li class="tui-dropdown">
+                    <a href="https://startrails.space/CREDITS">
+                        <span class="red-168-text">C</span>redits
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="tui-window">
+            <fieldset class="tui-fieldset">
+                <legend>Window</legend>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                Curabitur id vestibulum libero, id fermentum lorem.<br>
+                Aenean aliquam erat leo, eu tempus ex ornare eu.<br>
+                Sed ut lacus libero. Etiam rhoncus ipsum arcu.<br>
+                In quis bibendum libero. Donec nec egestas ipsum.<br>
+                Sed in venenatis diam. Nullam sollicitudin risus vel.<br>
+                <br>
+                <div class="tui-divider"></div>
+                <br>
+                <button class="tui-button white-255-text">more...</button>
+                <button class="tui-button purple-168 white-255-text">share</button>
+            </fieldset>
+        </div>
+
+        <div class="center" style="margin-top: 100px; margin-bottom: 100px;">
+            <div class="tui-panel white-168" style="width: 400px;">
+                <div class="tui-tabs red-168">
+                    <ul>
+                        <li><a class="tui-tab active" data-tab-content="tab-1-content">Tab 1</a></li>
+                        <li><a class="tui-tab" data-tab-content="tab-2-content">Tab 2</a></li>
+                        <li><a class="tui-tab disabled" data-tab-content="tab-3-content">Disabled</a></li>
+                    </ul>
+                </div>
+                <div class="content black-255-text">
+                    <div class="tui-tab-content" id="tab-1-content">
+                        <h3>Content 1</h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit incidunt ullam nemo ad id. Temporibus, impedit reiciendis quidem ea quasi fugiat! Illum unde eaque porro sint voluptates corporis reiciendis tempora?
+                    </div>
+                    <div class="tui-tab-content" id="tab-2-content">
+                        <h3>Content 2</h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit incidunt ullam nemo ad id.
+                    </div>
+                    <div class="tui-tab-content" id="tab-3-content">
+                        <h3>Content 3</h3>
+                        You could not see it!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status bar -->
+        <div class="tui-statusbar absolute">
+            <ul>
+                <li><a href="#!"><span class="red-168-text">F1</span> Help</a></li>
+                <li><a href="#!"><span class="red-168-text">F2</span> Save</a></li>
+                <li><a href="#!"><span class="red-168-text">F3</span> Open</a></li>
+                <li><a href="#!"><span class="red-168-text">Alt+F9</span> Compile</a></li>
+                <span class="tui-statusbar-divider"></span>
+                <li><a href="#!"><span class="red-168-text">F10</span> Menu</a></li>
+            </ul>
+        </div>
+
+    </div>
 </body>
-</html> 
+
+</html>
